@@ -5,6 +5,6 @@
 ## usage
 
 ```
-$ docker run -p 8080:8080 -v .:/go/src/app -it $(docker build . -q) /bin/bash
+$ docker run -p 8080:8080 -v $(pwd):/go/src/app -it $(docker build . -q) /bin/bash
 $ go run main.go
 ```
